@@ -6,16 +6,10 @@ import { Component, View,	bootstrap, For } from 'angular2/angular2';
 })
 
 @View({
-	template: `
-		<p>My name is {{ name }}. I have {{ myFriends.length }} friends!</p>
-		<ul>
-			<li *for="#name of myFriends">
-				{{ name }}
-			</li>
-		</ul>
-	`,
+	templateUrl: 'profiles/profiles.html',
 	directives: [For]
 })
+
 class DisplayComponent {
 	name: string;
 	myFriends: Array<string>;
