@@ -13,7 +13,7 @@ I have very little knowledge about ES6 and TypeScript. Bare with me.
 ## 2. Displaying data `profiles.html`
 
 - I typed less code than in my [ES5 version](https://github.com/armno/angular2-es5-101).
-- For the first time I use [ES6 template strings](https://github.com/lukehoban/es6features#template-strings). It's just a syntax sugar and pretty convenient. But I don't like sugar so I just go with `templateUrl` which also works.
+- For the first time I use [ES6 template strings](https://github.com/lukehoban/es6features#template-strings). It's just a syntax sugar and pretty convenient. But I have committed to myself to always use `templateUrl`. So this part differs from the code in the website.
 - The way the app is bootstrapped looks similar with ES5 (but again, shorter), especially config objects in `Component` and `View`.
 - Only `import` thing looks completely new to me. It seems that `import` brings all the modules/classes available in the later code.
 - `DisplayComponent.parameters = [[FriendsService]];` is missing from ES5 version, which is cool because I have no idea what it does in ES5 version.
