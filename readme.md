@@ -4,6 +4,10 @@ Learning Angular 2 from "Step by step guide" on angular.io, TypeScript version.
 
 I have very little knowledge about ES6 and TypeScript. Bare with me.
 
+```sh
+$ tsc --watch -m commonjs -t es5 --emitDecoratorMetadata <FILENAME>.ts
+```
+
 ## 1. Getting started `index.html`
 
 - Be sure to take a look on [5 min quickstart](https://angular.io/docs/js/latest/quickstart.html) before starting this tutorial because it assumes that you know these already:

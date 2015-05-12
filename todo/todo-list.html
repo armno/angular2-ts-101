@@ -1,0 +1,10 @@
+<h1>This is my todo.</h1>
+
+<ul>
+	<li *for="#task of todos">
+		{{ task }}
+	</li>
+</ul>
+
+<input type="text" #todotext (keyup)="doneTyping($event)">
+<button (click)="addTodo(todotext.value)">Add todo</button>
