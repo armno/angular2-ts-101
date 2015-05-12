@@ -30,3 +30,10 @@ $ tsc --watch -m commonjs -t es5 --emitDecoratorMetadata <FILENAME>.ts
 - And with `SystemJS`, it's easy to bring another class in using `System.import()` function. Just pass the path of the file into `import()` function.
 - SystemJS is a module loader. In this case we are loading CommonJS modules which are the output of TypeScript.
 - Since we are injecting `FriendsService` to `DisplayComponent`, we need to call `System.import('services/friends')` **before** importing `DisplayComponent`
+
+## 3. User input
+
+- I was stuck for about 2 minutes just because I forgot to import `For` and to declare it in `directives` config object.
+- We can use the same template with ES5 version. Nothing will break.
+- I learned TypeScript and ES6 class definition from this chapter.
+- I can remove `todos: Array<string>` and everything still works. Not sure if this line is ES6 or TypeScript though.
