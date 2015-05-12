@@ -37,3 +37,14 @@ $ tsc --watch -m commonjs -t es5 --emitDecoratorMetadata <FILENAME>.ts
 - We can use the same template with ES5 version. Nothing will break.
 - I learned TypeScript and ES6 class definition from this chapter.
 - I can remove `todos: Array<string>` and everything still works. Not sure if this line is ES6 or TypeScript though.
+
+## 4. Component
+
+- I don't know how to import `ChildComponent` into `ParentComponent` yet (in case they are separated into 2 files). What I did and it didn't work is having:
+
+```js
+System.import('parent-child/child');
+System.import('parent-child/parent');
+```
+
+- The files were loaded into the page. But for some reason, `ChildComponent` in still `undefined` in `ParentComponent` on runtime.
