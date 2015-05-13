@@ -20,14 +20,14 @@ class TodoList {
 		];
 	}
 
-	addTodo(todo: string) {
-		this.todos.push(todo);
+	addTodo(todo) {
+		this.todos.push(todo.value);
+		todo.value = '';
 	}
 
-	doneTyping($event) {
+	doneTyping($event, todo) {
 		if ($event.which === 13) {
-			this.addTodo($event.target.value);
-			$event.target.value = null;
+			this.addTodo(todo);
 		}
 	}
 }

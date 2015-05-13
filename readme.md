@@ -36,7 +36,7 @@ $ tsc --watch -m commonjs -t es5 --emitDecoratorMetadata <FILENAME>.ts
 - I was stuck for about 2 minutes just because I forgot to import `For` and to declare it in `directives` config object.
 - We can use the same template with ES5 version. Nothing will break.
 - I learned TypeScript and ES6 class definition from this chapter.
-- I can remove `todos: Array<string>` and everything still works. Not sure if this line is ES6 or TypeScript though.
+- I can remove `todos: Array<string>` and everything still works. Not sure if this line is ES6 or TypeScript though. (I think it's TypeScript)
 
 ## 4. Component
 
